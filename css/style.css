@@ -1,41 +1,87 @@
-body{
-    background-color: #eaeaea;
+body {
+    background-color: #314062;
 }
-.container{
+.container {
     width: 800px;
     margin: auto;
-    background-color: white;
+    background-color: rgb(188, 221, 237);
 }
-.header h1{
+.header h1 {
     font-size: 40px;
     margin-left: 20px;
 }
-.header ul li{
+.header ul li {
     display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 20px;
 }
-.cover{
-    background-image: url(/img/image.png);
-    height: 450px;
-    width: 750px;
+.cover {
+    background-image: url("/img/cover.jpg");
+    height: 300px;
+    width: 760px;
     margin: auto;
 }
-.content h1{
+.beranda h1 {
     font-size: 30px;
     margin-left: 20px;
 }
-.content h4{
+.beranda h4 {
     margin-left: 20px;
 }
-.content p{
+.beranda p {
     margin-left: 20px;
 }
-.footer{
-    background-color: red;
+.gallery {
+    --s: 180px; /* control the size */
+    --g: 8px; /* control the gap */
+    --f: 1.5; /* control the scale factor */
+
+    display: grid;
+    margin: auto;
+    gap: var(--g);
+    width: calc(3*var(--s) + 2*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+}
+
+.gallery > img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.35s linear;
+}
+.gallery img:hover {
+    filter: grayscale(0);
+    width: calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+}
+.foto h2 {
+    font-size: 30px;
+    margin-left: 80px;
+}
+.foto ul li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: justify;
+}
+.tentang h1 {
+    font-size: 30px;
+    margin-left: 20px;
+}
+.tentang p {
+    margin-left: 20px;
+}
+.footer {
+    background-color: rgb(43, 104, 126);
     text-align: center;
     color: white;
-    margin-top: 20px;
+    margin-top: 30px;
 }
-.footer p{
+.footer p {
     font-size: 18px;
 }
