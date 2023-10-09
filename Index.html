@@ -15,7 +15,28 @@
                 <li><a href="#Tentang">Tentang</a></li>
             </ul>
         </div>
-        <div class="cover"></div>
+        <div class="sidebar" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large"
+            onclick="w3_close()">Close &times;</button>
+            <a href="#Beranda" class="w3-bar-item w3-button">Beranda</a>
+            <a href="#Siang" class="w3-bar-item w3-button">Siang</a>
+            <a href="#Malam" class="w3-bar-item w3-button">Malam</a>
+            <a href="#Tentang" class="w3-bar-item w3-button">Tentang</a>
+          </div>
+          <div>
+            <button class="b.sidebar" onclick="w3_open()">&#9776;
+            </button>
+          </div>
+            
+            <script>
+                function w3_open() {
+                    document.getElementById("mySidebar").style.display = "grid";
+                }
+                function w3_close() {
+                    document.getElementById("mySidebar").style.display = "none";
+                }
+                </script>
+            <div class="cover"></div>
         <div id="Beranda" class="beranda">
             <h1>Hello Everybody</h1>
             <h4>Halaman ini berisikan kumpulan foto yang aku ambil selama tahun 2020-2023</h4>

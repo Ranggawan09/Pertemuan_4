@@ -2,6 +2,7 @@ body {
     background-color: #314062;
 }
 .container {
+    display: grid;
     width: 800px;
     margin: auto;
     background-color: rgb(188, 221, 237);
@@ -11,9 +12,24 @@ body {
     margin-left: 20px;
 }
 .header ul li {
-    display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+    font-family: system-ui, -apSple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
     margin-left: 20px;
+}
+.header ul {
+    background-color: rgb(255, 237, 248);
+    margin-top: 20px;
+}
+.sidebar{
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: aliceblue;
+    position: absolute;
+    height: 70%;
+    overflow: auto;
 }
 .cover {
     background-image: url("/img/cover.jpg");
